@@ -79,7 +79,24 @@ nav {
     width: 50px;
     height: 50px;
     display: inline;
+
 }
+
+.img__animation {
+    animation-duration: 2s;
+    animation-name: aumentar;
+}
+
+@keyframes aumentar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .nav-Brand h1 a {
     text-decoration: none;
@@ -297,6 +314,8 @@ footer {
     grid-area: cloud4;
 }
 
+
+
 /*Nosotros*/
 .container__nosotros {
     display: flex;
@@ -420,4 +439,11 @@ textarea::placeholder {
 
 form label {
     font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width:850px) {
+    .container__form {
+        margin: 10% 0;
+        height: unset;
+    }
 }
